@@ -19,7 +19,7 @@ async function TestCase4() {
     await expect(page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();
 
     // Enter correct email address and password
-    await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill('mejiku1996@gmail.com');
+    await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill('dicky@example.com');
     await page.getByPlaceholder('Password').fill('123456');
 
     // Click 'login' button
